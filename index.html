@@ -117,30 +117,123 @@
     gap: 20px;
   }
   .skills-grid .entry { margin-bottom: 0; }
- .thesis-box {
-  background: #f3f6f8;
-  border-left: 4px solid #1c2b39;
-  padding: 24px 26px;
-  border-radius: 2px;
-}
-.thesis-box .title { font-weight: bold; font-size: 1.1em; color: #1c2b39; margin-bottom: 4px; }
-.thesis-box .meta { color: #6f6f6f; font-size: 0.9em; font-style: italic; margin-bottom: 14px; }
-.thesis-box p { color: #3a3a3a; font-size: 0.97em; margin-bottom: 12px; }
-.thesis-box .keywords { font-size: 0.85em; color: #555; }
-.thesis-box .keywords span {
-  background: #e4e9ec;
-  padding: 3px 10px;
-  border-radius: 12px;
-  margin-right: 6px;
-  display: inline-block;
-  margin-bottom: 6px;
-}
-.thesis-box .rights {
-  margin-top: 16px;
-  font-size: 0.78em;
-  color: #999;
-  font-style: italic;
-}
+
+  .thesis-box {
+    background: #f3f6f8;
+    border-left: 4px solid #1c2b39;
+    padding: 24px 26px;
+    border-radius: 2px;
+  }
+  .thesis-box .title { font-weight: bold; font-size: 1.1em; color: #1c2b39; margin-bottom: 4px; }
+  .thesis-box .meta { color: #6f6f6f; font-size: 0.9em; font-style: italic; margin-bottom: 14px; }
+  .thesis-box p { color: #3a3a3a; font-size: 0.97em; margin-bottom: 12px; }
+  .thesis-box .keywords { font-size: 0.85em; color: #555; }
+  .thesis-box .keywords span {
+    background: #e4e9ec;
+    padding: 3px 10px;
+    border-radius: 12px;
+    margin-right: 6px;
+    display: inline-block;
+    margin-bottom: 6px;
+  }
+  .thesis-box .rights {
+    margin-top: 16px;
+    font-size: 0.78em;
+    color: #999;
+    font-style: italic;
+  }
+  .thesis-stats {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 14px 0 20px;
+  }
+  .thesis-stats span {
+    background: #1c2b39;
+    color: #f0f0f0;
+    font-size: 0.82em;
+    padding: 5px 12px;
+    border-radius: 3px;
+    font-style: normal;
+  }
+  .thesis-block { margin-bottom: 14px; }
+  .thesis-block .label {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #6a97b5;
+    font-weight: bold;
+    margin-bottom: 3px;
+  }
+  .thesis-block p { margin: 0; }
+  .demonstrates {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+  }
+  .demonstrates span {
+    border: 1px solid #6a97b5;
+    color: #1c2b39;
+    font-size: 0.82em;
+    padding: 4px 11px;
+    border-radius: 12px;
+  }
+  .affinity-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 4px;
+    font-size: 0.88em;
+  }
+  .affinity-table th, .affinity-table td {
+    border: 1px solid #d8dde0;
+    padding: 7px 10px;
+    text-align: center;
+  }
+  .affinity-table th {
+    background: #1c2b39;
+    color: #f0f0f0;
+    font-weight: normal;
+  }
+  .affinity-table td:first-child, .affinity-table th:first-child {
+    text-align: left;
+  }
+  .affinity-table tr.highlight td {
+    background: #eaf2f7;
+    font-weight: bold;
+    color: #1c2b39;
+  }
+  .thesis-figure {
+    margin: 18px 0;
+    text-align: center;
+  }
+  .thesis-figure img {
+    max-width: 100%;
+    border: 1px solid #dfe3e6;
+    border-radius: 2px;
+  }
+  .thesis-figure .caption {
+    font-size: 0.8em;
+    color: #888;
+    font-style: italic;
+    margin-top: 6px;
+  }
+  .thesis-challenges {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px dashed #c9d3d8;
+  }
+  .thesis-challenges ul {
+    margin-top: 8px;
+    padding-left: 20px;
+  }
+  .thesis-challenges li {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    color: #3a3a3a;
+  }
+  .thesis-challenges li strong { color: #1c2b39; }
+
   #contact p { font-size: 1.02em; }
   #contact .links a {
     color: #1c2b39;
@@ -279,19 +372,78 @@
     <p>Experimental and computational evaluation combining phytochemical analysis with in silico assessment of biological activity.</p>
   </div>
 </section>
+
 <section id="thesis">
   <h2>Final Year Project</h2>
   <div class="thesis-box">
     <div class="title">In Silico Evaluation of Asparagus racemosus Saponins and Phytoestrogens as Estrogen Receptor Alpha Inhibitors in Breast Cancer</div>
-    <div class="meta">M.S. Thesis, University of Algiers 1 Benyoucef Benkhedda · Defended with Honors (Mention Excellent), 2025</div>
-    <p>Estrogen receptor-positive breast cancer affects 70% of women diagnosed with breast cancer and remains a significant clinical challenge due to ERα overexpression driving tumor growth. This computational study explores the therapeutic potential of Shatavari (Asparagus racemosus) steroidal saponins as multi-target alternatives, evaluating four bioactive compounds against ERα, mTOR, and MEK through molecular docking.</p>
-    <p>Results demonstrated strong competition with endogenous estradiol and disruption of multiple downstream signalling pathways, with Shatavaroside A showing the highest target affinity — supporting the development of multi-pathway Shatavari-based therapies as an alternative to single-pathway endocrine treatment.</p>
-    <div class="keywords">
+    <div class="meta">M.S. Thesis, University of Algiers 1 Benyoucef Benkhedda · Defended with Honors (Mention Excellent), 2025 · Presented at SPDFS-2025</div>
+
+    <div class="thesis-stats">
+      <span>4 compounds screened</span>
+      <span>3 protein targets</span>
+      <span>PyRx · AutoDock Vina · Discovery Studio</span>
+    </div>
+
+    <div class="thesis-block">
+      <div class="label">Objective</div>
+      <p>Address treatment resistance in estrogen receptor-positive breast cancer by identifying natural compounds capable of disrupting multiple survival pathways at once, rather than a single target.</p>
+    </div>
+
+    <div class="thesis-block">
+      <div class="label">Approach</div>
+      <p>Multi-target molecular docking of four Shatavari saponins against ERα, mTOR, and MEK, benchmarked against reference pharmacological compounds (Tamoxifen, Rapamycin, Trametinib).</p>
+    </div>
+
+    <div class="thesis-block">
+      <div class="label">Key Result</div>
+      <p><strong>Shatavaroside A</strong> outperformed or matched all three reference drugs across all three targets — evidence for a multi-pathway alternative to single-target endocrine therapy.</p>
+    </div>
+
+    <div class="thesis-block">
+      <div class="label">Binding Affinity (kcal/mol) — lower is stronger</div>
+      <table class="affinity-table">
+        <tr><th>Compound</th><th>ERα</th><th>mTOR</th><th>MEK</th></tr>
+        <tr><td>Native / reference ligand</td><td>-8.8</td><td>-11.2</td><td>-9.4</td></tr>
+        <tr><td>Synthetic drug (Tamoxifen / Rapamycin / Trametinib)</td><td>-9.7</td><td>-14.2</td><td>-10.6</td></tr>
+        <tr class="highlight"><td>Shatavaroside A</td><td>-12.7</td><td>-12.3</td><td>-11.9</td></tr>
+        <tr><td>Shatavarin VIII</td><td>-10.5</td><td>-9.3</td><td>-11.7</td></tr>
+        <tr><td>Shatavarin IX</td><td>-10.2</td><td>-10.3</td><td>-10.3</td></tr>
+        <tr><td>Shatavarin IV</td><td>-9.4</td><td>-10.9</td><td>-10.0</td></tr>
+      </table>
+    </div>
+
+    <div class="thesis-figure">
+      <img src="figure-shatavaroside-A-ERa.jpg" alt="Docking interaction diagram of Shatavaroside A with ERα">
+      <div class="caption">2D/3D interaction diagram: Shatavaroside A bound to the ERα active site — hydrogen bonds with THR:460, CYS:381, HIS:373.</div>
+    </div>
+
+    <div class="thesis-block">
+      <div class="label">Demonstrates</div>
+      <div class="demonstrates">
+        <span>Multi-target drug design</span>
+        <span>Computational pipeline design</span>
+        <span>Independent research to publication</span>
+      </div>
+    </div>
+
+    <div class="thesis-block thesis-challenges">
+      <div class="label">Challenges Solved</div>
+      <ul>
+        <li><strong>ADMET prediction on heavy compounds:</strong> the saponins' high molecular weight caused SMILES-based errors in SwissADME, the tool most researchers default to. Switched to ADMETlab 3.0, which handles high-MW compounds more reliably.</li>
+        <li><strong>Grid box configuration:</strong> PyRx's docking engine (AutoDock Vina) requires precise definition of the search grid around the binding site — an imprecise grid silently produces misleading results, so each target's active site was carefully mapped before docking.</li>
+        <li><strong>Ligand preparation:</strong> proper preparation of each molecule (protonation state, energy minimization) before docking, to ensure the binding poses generated were chemically valid.</li>
+        <li><strong>Affinity vs. bioavailability trade-off:</strong> the strongest binders also violated 3 of 4 Lipinski rules (molecular weight up to 1035 Da, excess H-bond donors/acceptors) — meaning high potency doesn't guarantee oral bioavailability. Proposed liposomal nanocarrier encapsulation as a delivery strategy to bypass this limitation.</li>
+      </ul>
+    </div>
+
+    <div class="keywords" style="margin-top:16px;">
       <span>Breast Cancer</span><span>ERα</span><span>Asparagus racemosus</span><span>Molecular Docking</span>
     </div>
     <div class="rights">© 2025–2026 Asma Djattouf. Summary shared for academic and professional visibility. Full methodology and dataset available upon request.</div>
   </div>
 </section>
+
 <section id="skills">
   <h2>Skills</h2>
   <div class="skills-grid">
