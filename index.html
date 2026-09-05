@@ -111,6 +111,22 @@
   .entry .title { font-weight: bold; font-size: 1.06em; color: #1c2b39; }
   .entry .meta { color: #6f6f6f; font-size: 0.9em; font-style: italic; margin-top: 2px; }
   .entry p { margin-top: 8px; color: #444; font-size: 0.97em; }
+  .entry ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  .entry ul li {
+    margin-bottom: 9px;
+    font-size: 0.95em;
+    color: #3a3a3a;
+  }
+  .sub-entry {
+    margin-top: 10px;
+    padding-left: 14px;
+    border-left: 2px dotted #d8dde0;
+  }
+  .sub-entry .sub-title { font-weight: bold; font-size: 0.95em; color: #1c2b39; }
+  .sub-entry .sub-meta { color: #6f6f6f; font-size: 0.85em; font-style: italic; }
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -320,7 +336,7 @@
 <nav>
   <a href="#about">About</a>
   <a href="#education">Education</a>
-  <a href="#teaching">Teaching</a>
+  <a href="#experience">Experience</a>
   <a href="#research">Research</a>
   <a href="#thesis">Final Project</a>
   <a href="#skills">Skills</a>
@@ -352,20 +368,53 @@
   </div>
 </section>
 
-<section id="teaching">
-  <h2>Teaching</h2>
-  <p style="margin-bottom:20px; color:#444;">Teaching Assistant — Biochemistry &amp; Cell Biology, University of Algiers 1 Benyoucef Benkhedda — since October 2025.</p>
+<section id="experience">
+  <h2>Experience</h2>
+
   <div class="entry">
-    <div class="title">Metabolic Pathways and Control Sites</div>
-    <div class="meta">Tutorial (TD), Master 2</div>
+    <div class="title">Internship — Quality Assurance</div>
+    <div class="meta">Pharmaceutical industry</div>
+    <ul>
+      <li>Reviewed document traceability (batch numbers, calibration, signatures) across production and control records, including a concrete case where a validation signature didn't match what had actually been executed — learned that a signature confirms a step was checked off, not that it was done.</li>
+      <li>Developed the reflex to distinguish a writing problem (ambiguous protocol) from a training problem (someone executing a step without proper preparation).</li>
+      <li>This environment taught me a precise, methodical rigor: never validate a result on its apparent consistency alone, always verify it matches what actually happened — a reflex I still apply outside QA, including in the lab protocols I write for teaching.</li>
+      <li>Beyond the technical skills, a real step in professional maturation: operating within a demanding regulated framework, working methodically as part of a multidisciplinary team.</li>
+    </ul>
   </div>
+
   <div class="entry">
-    <div class="title">Biomolecule Production by Bioengineering</div>
-    <div class="meta">Tutorial (TD), Master 1 — recombinant proteins, expression systems, purification, and characterization</div>
-  </div>
-  <div class="entry">
-    <div class="title">Animal Biology — Histology</div>
-    <div class="meta">Practical labs (TP), Licence 1</div>
+    <div class="title">Teaching Assistant — Biochemistry &amp; Cell Biology</div>
+    <div class="meta">University of Algiers 1 Benyoucef Benkhedda · since October 2025</div>
+    <p>Teaching changes shape depending on the level: in first-year practicals I guide students who are still learning to see; in Master's tutorials I push them to think independently — especially in how they read and critique a scientific article. That shift, moving weekly between the two, has taught me as much as my own studies did.</p>
+
+    <div class="sub-entry">
+      <div class="sub-title">Animal Biology — Histology</div>
+      <div class="sub-meta">Practical labs (TP), Licence 1</div>
+      <ul>
+        <li>Guided first-year students through identifying the four major tissue types (epithelial, connective, muscular, nervous) under the microscope, connecting structural organization to the function each tissue carries out in the body.</li>
+        <li>Learned to build technical precision on top of trust rather than instead of it — at this stage, most students are still discovering what a hands-on experiment even is, so accessibility has to come before rigor.</li>
+        <li>Coached students past simply naming a tissue toward reading a section and understanding what it reveals about the living organism it came from.</li>
+      </ul>
+    </div>
+
+    <div class="sub-entry">
+      <div class="sub-title">Biomolecule Production by Bioengineering</div>
+      <div class="sub-meta">Tutorial (TD), Master 1</div>
+      <ul>
+        <li>Guided students through expression-system selection (prokaryotic, yeast, mammalian, cell-free), framing the choice around the target protein's structural complexity and post-translational modification needs rather than a fixed checklist.</li>
+        <li>Covered vector design decisions — promoter choice, purification tags, secretion signals — always tied back to real biological constraints such as glycosylation, disulfide bond formation, and proper folding.</li>
+        <li>Used critical reading of recent research articles to train students to interrogate a production strategy and trace the full bioprocess chain, from upstream expression to downstream purification, instead of memorizing it.</li>
+      </ul>
+    </div>
+
+    <div class="sub-entry">
+      <div class="sub-title">Metabolic Pathways and Control Sites</div>
+      <div class="sub-meta">Tutorial (TD), Master 2</div>
+      <ul>
+        <li>Walked Master 2 students through the regulatory logic of major metabolic pathways, focusing on why a given control site is rate-limiting rather than just where it sits in the pathway.</li>
+        <li>Pushed for the same demanding read expected of a researcher: identifying a weak point in an argument, a method choice, or a gap left open, not a faithful summary of the material.</li>
+      </ul>
+    </div>
   </div>
 </section>
 
